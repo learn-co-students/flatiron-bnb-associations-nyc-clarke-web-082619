@@ -1,5 +1,5 @@
 require 'rails_helper'
-
+ 
 describe City do
   let(:nyc) { City.create(name: 'NYC') }
 
