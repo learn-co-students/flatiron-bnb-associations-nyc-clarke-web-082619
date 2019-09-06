@@ -3,8 +3,9 @@ class CreateReservations < ActiveRecord::Migration[5.0]
         create_table :reservations do |t|
             t.string :checkin
             t.string :checkout
-            t.integer :listing
-            t.integer :guest
+            t.integer :listing_id
+            t.integer :guest_id
+            t.integer :host_id
         end
     end
 end

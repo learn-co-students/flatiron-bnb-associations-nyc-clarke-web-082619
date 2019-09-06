@@ -34,15 +34,16 @@ ActiveRecord::Schema.define(version: 6) do
   create_table "reservations", force: :cascade do |t|
     t.string  "checkin"
     t.string  "checkout"
-    t.integer "listing"
-    t.integer "guest"
+    t.integer "listing_id"
+    t.integer "guest_id"
+    t.integer "host_id"
   end
 
   create_table "reviews", force: :cascade do |t|
     t.string  "description"
     t.integer "rating"
-    t.integer "guest"
-    t.integer "reservation"
+    t.integer "guest_id"
+    t.integer "reservation_id"
   end
 
   create_table "users", force: :cascade do |t|
